@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/textbackground"
+    tools:context=".Company_Register">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COMPANY REGISTRATION FORM"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="6dp">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/work2s" />
+
+
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="@string/small_heading"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+
+                />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/comp_name"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25sp"
+                        android:layout_marginTop="20dp"
+                        android:hint="Organization name"
+                        android:inputType="text"
+                        android:shadowColor="@color/white"
+                        android:textColorHint="@color/pinkish"
+                        android:textSize="25sp"
+                        android:textStyle="italic" />
+
+                    <EditText
+                        android:id="@+id/comp_email"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25sp"
+                        android:layout_marginTop="20dp"
+                        android:hint="Email Address"
+                        android:inputType="textEmailAddress"
+                        android:shadowColor="@color/white"
+                        android:textColorHint="@color/pinkish"
+                        android:textSize="25sp"
+                        android:textStyle="italic" />
+
+                    <EditText
+                        android:id="@+id/comp_category"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25sp"
+                        android:layout_marginTop="25dp"
+                        android:hint="Organization category"
+                        android:inputType="text"
+                        android:shadowColor="@color/white"
+                        android:textColorHint="@color/pinkish"
+                        android:textSize="25sp"
+                        android:textStyle="italic" />
+
+                    <EditText
+                        android:id="@+id/comp_location"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25sp"
+                        android:layout_marginTop="25dp"
+                        android:hint="Location/region"
+                        android:inputType="text"
+                        android:shadowColor="@color/white"
+                        android:textColorHint="@color/pinkish"
+                        android:textSize="25sp"
+                        android:textStyle="italic" />
+
+                    <EditText
+                        android:id="@+id/comp_pass"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25sp"
+                        android:layout_marginTop="25dp"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:shadowColor="@color/white"
+                        android:textColorHint="@color/pinkish"
+                        android:textSize="25sp"
+                        android:textStyle="italic" />
+
+                    <EditText
+                        android:id="@+id/compre_pass"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25sp"
+                        android:layout_marginTop="25dp"
+                        android:hint="Re-enter pass"
+                        android:inputType="textPassword"
+                        android:shadowColor="@color/white"
+                        android:textColorHint="@color/pinkish"
+                        android:textSize="25sp"
+                        android:textStyle="italic" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp">
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/comp_signin_btn"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="38dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="SIGN IN"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/comptext_sign_in"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="180dp"
+                    android:text="@string/log_in_message"
+                    android:textColor="@color/white"
+                    android:textSize="21sp"
+                    android:textStyle="italic" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>

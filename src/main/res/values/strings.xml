@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">JOB RECRUITMENT APP</string>
+
+    <string name="home_text">
+        This is an android android application used by individual or the  companies who have jobs
+        and want to post them and those who are looking for jobs. You can either post the job and
+        its description by clicking the post button and Check button if searching for the job.
+
+    </string>
+    <string name="contact">We highly appreciate you for using this app. contact developer @
+        Oyugitolbert@gmail.com</string>
+    <string name="small_heading"> fill the form bellow before proceeding</string>
+    <string name="deatailsinfo">Please give your personal and academic background before proceeding</string>
+    <string name="login_head">Enter your log in details before proceeding</string>
+    <string name="log_in_message">Already sign in, LOG IN</string>
+
+    <string name="sign_in_message">Already sign up, SIGN IN</string>
+
+    <!--menu items-->
+    <string name="home">Home</string>
+    <string name="register">Register</string>
+    <string name="logging">Log in</string>
+    <string name="details">My Details</string>
+    <string name="logout">Log out</string>
+    <string name="view">View Jobs</string>
+    <string name="viewapplicant">View Applicants</string>
+    <string name="profile">Profile</string>
+    <string name="dev_email">Oyugitolbert@gmail.com</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="title_activity_applicant_drawer">Applicant_drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_company_drawer">Company_drawer</string>
+    <string name="appinfo">APPLICANTS PERSONAL DETAILS</string>
+    <string name="instituion">Institution of study</string>
+    <string name="area">Area of expereience / study</string>
+    <string name="level">Level of Study</string>
+    <string name="year">Year of experience</string>
+    <string name="explanation">Briefly explain why you need the job</string>
+    <string name="level1">Whats your Level of study</string>
+    <string name="manyyears">How many experience years</string>
+    <string name="reason">Briefly explain why you need the job</string>
+    <string name="date">Date</string>
+    <string name="prof">View your Profile</string>
+    <string name="updateprof">Update your  profile</string>
+    <string name="appviewjob">View Jobs</string>
+    <string name="operation">Choose the kind of action you want to perform </string>
+    <string name="updatejob">Update Jobs</string>
+    <string name="clients">View applicants</string>
+    <string name="companyprof">Update Company profile</string>
+    <string name="viewcompanyprof">View Company profile</string>
+
+</resources>
