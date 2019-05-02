@@ -3,24 +3,24 @@
     package="com.example.jobapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_descriptor"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Applicants_details"></activity>
         <activity android:name=".Company_actions" />
         <activity android:name=".Applicant_Updateprofile" />
         <activity android:name=".Applicants_Actions" />
-        <activity android:name=".Applicants_Details" />
         <activity
             android:name=".Company_drawer"
-            android:label="@string/title_activity_company_drawer"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Applicant_drawer"
-            android:label="@string/title_activity_applicant_drawer"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Company_viewApplicants" />
         <activity android:name=".Applicants_profile" />

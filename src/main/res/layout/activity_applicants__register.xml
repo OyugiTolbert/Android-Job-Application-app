@@ -7,12 +7,13 @@
     android:background="@drawable/textbackground"
     tools:context=".Applicants_Register">
 
+
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
-        android:orientation="vertical">
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        >
 
         <TextView
             android:layout_width="wrap_content"
@@ -20,12 +21,14 @@
             android:text="APPLICANTS REGISTRATION FORM"
             android:textColor="@color/white"
             android:textSize="25sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:gravity="center"/>
 
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:cardCornerRadius="6dp">
+            app:cardCornerRadius="6dp"
+            android:layout_gravity="center">
 
             <android.support.v7.widget.AppCompatImageView
                 android:layout_width="match_parent"
@@ -39,7 +42,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_gravity="center">
 
             <TextView
                 android:layout_width="match_parent"
@@ -56,77 +60,91 @@
             <android.support.v7.widget.CardView
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp">
+                android:layout_gravity="center">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
 
                     <EditText
                         android:id="@+id/ful_name"
                         android:layout_width="300dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="25sp"
                         android:layout_marginTop="20dp"
                         android:hint="Full name"
-                        android:inputType="text"
+                        android:inputType="text|textPersonName"
                         android:shadowColor="@color/white"
-                        android:textColorHint="@color/pinkish"
-                        android:textSize="25sp"
-                        android:textStyle="italic" />
+                        android:textColorHint="@color/grayish"
+                        android:textSize="17sp"
+                        android:textStyle="normal"
+                        android:layout_gravity="center"/>
+
+                    <EditText
+                        android:id="@+id/applicant_id"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:hint="Id number"
+                        android:inputType="number"
+                        android:shadowColor="@color/white"
+                        android:textColorHint="@color/grayish"
+                        android:textSize="17sp"
+                        android:textStyle="normal" />
 
                     <EditText
                         android:id="@+id/applicant_email"
                         android:layout_width="300dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="25sp"
+                        android:layout_gravity="center"
                         android:layout_marginTop="20dp"
                         android:hint="Email Address"
                         android:inputType="textEmailAddress"
                         android:shadowColor="@color/white"
-                        android:textColorHint="@color/pinkish"
-                        android:textSize="25sp"
-                        android:textStyle="italic" />
+                        android:textColorHint="@color/grayish"
+                        android:textSize="17sp"
+                        android:textStyle="normal" />
 
                     <EditText
                         android:id="@+id/applicant_location"
                         android:layout_width="300dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="25sp"
+                        android:layout_gravity="center"
                         android:layout_marginTop="25dp"
                         android:hint="Location/region"
                         android:inputType="text"
                         android:shadowColor="@color/white"
-                        android:textColorHint="@color/pinkish"
-                        android:textSize="25sp"
-                        android:textStyle="italic" />
+                        android:textColorHint="@color/grayish"
+                        android:textSize="17sp"
+                        android:textStyle="normal" />
 
                     <EditText
                         android:id="@+id/applicant_pass"
                         android:layout_width="300dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="25sp"
+                        android:layout_gravity="center"
                         android:layout_marginTop="25dp"
                         android:hint="Password"
                         android:inputType="textPassword"
                         android:shadowColor="@color/white"
-                        android:textColorHint="@color/pinkish"
-                        android:textSize="25sp"
-                        android:textStyle="italic" />
+                        android:textColorHint="@color/grayish"
+                        android:textSize="17sp"
+                        android:textStyle="normal" />
 
                     <EditText
                         android:id="@+id/re_pass"
                         android:layout_width="300dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="25sp"
+                        android:layout_gravity="center"
                         android:layout_marginTop="25dp"
                         android:hint="Re-enter pass"
                         android:inputType="textPassword"
                         android:shadowColor="@color/white"
-                        android:textColorHint="@color/pinkish"
-                        android:textSize="25sp"
-                        android:textStyle="italic" />
+                        android:textColorHint="@color/grayish"
+                        android:textSize="17sp"
+                        android:textStyle="normal" />
                 </LinearLayout>
             </android.support.v7.widget.CardView>
 
@@ -134,25 +152,33 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:paddingTop="10dp">
+                android:paddingTop="10dp"
+                android:layout_gravity="center">
 
-                <android.support.v7.widget.AppCompatButton
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/progressbar"
+                    android:layout_gravity="center"
+                    android:visibility="gone"/>
+
+                <Button
                     android:id="@+id/App_signin_btn"
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="38dp"
+                   android:layout_gravity="center"
                     android:layout_marginBottom="5dp"
                     android:text="SIGN IN"
-                    android:textSize="20dp"
+                    android:textSize="30sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/apptext_sign_in"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="200dp"
+                    android:gravity="end"
                     android:text="@string/log_in_message"
-                    android:textColor="@color/white"
+                    android:textColor="@color/pinkish"
                     android:textSize="21sp"
                     android:textStyle="italic" />
 

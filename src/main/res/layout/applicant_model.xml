@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#fff"
+    app:contentPadding="5dp"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--show Institution name-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/instname"
+                android:text="@string/instname"
+                android:textColor="#000"
+                android:textSize="20sp"
+                />
+            <!--show what you studied-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/study"
+                android:text="@string/studyarea"
+                android:textColor="#000"
+                android:textSize="20sp"
+                />
+            <!--show level of study-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/studylvl"
+                android:text="@string/studylevel"
+                android:textColor="#000"
+                android:textSize="20sp"
+                />
+            <!--show experience-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/experiencelevl"
+                android:text="@string/experience"
+                android:textColor="#000"
+                android:textSize="20sp"
+                />
+            <!--show your comment-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/commenting"
+                android:text="@string/comment"
+                android:textColor="#000"
+                android:textSize="20sp"
+                />
+            <!--show gender-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sex"
+                android:text="@string/gendering"
+                android:textColor="#000"
+                android:textSize="20sp"
+                />
+
+
+
+        </LinearLayout>
+
+</android.support.v7.widget.CardView>

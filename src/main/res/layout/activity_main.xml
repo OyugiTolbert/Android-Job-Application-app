@@ -12,20 +12,33 @@
         android:layout_height="200dp"
         android:orientation="vertical">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="@string/welcoming"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_marginTop="30dp"/>
+
         <android.support.v7.widget.CardView
             android:id="@+id/card_view_home1"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            app:cardCornerRadius="6dp">
+            app:cardCornerRadius="6dp"
+            android:layout_marginTop="8dp">
 
 
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:paddingTop="65dp"
-                app:srcCompat="@drawable/homeimage" />
+
+                android:src="@drawable/homeimage"
+                android:contentDescription="TODO"
+                tools:ignore="ContentDescription" />
 
         </android.support.v7.widget.CardView>
 
@@ -36,26 +49,28 @@
             android:paddingBottom="6dp"
             android:text="@string/home_text"
             android:textColor="@color/white"
-            android:textSize="28sp" />
+            android:textSize="23sp"
+            android:gravity="center"/>
 
         <android.support.v7.widget.CardView
             android:id="@+id/card_view_home2"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="250dp"
             android:layout_gravity="center"
             android:foregroundGravity="center"
-            app:cardCornerRadius="4dp">
+            app:cardCornerRadius="4dp"
+            >
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginBottom="20dp"
+               android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
                 android:orientation="vertical">
 
 
-                <android.support.v7.widget.AppCompatButton
+                <Button
                     android:id="@+id/nextcompdrawer"
                     android:layout_width="350dp"
                     android:layout_height="wrap_content"
@@ -63,11 +78,13 @@
                     android:textColor="@color/greenish_color"
                     android:textSize="30sp"
                     android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
 
 
                     />
 
-                <android.support.v7.widget.AppCompatButton
+                <Button
                     android:id="@+id/nextappdrawer"
                     android:layout_width="350dp"
                     android:layout_height="wrap_content"
@@ -75,7 +92,7 @@
                     android:textColor="@color/greenish_color"
                     android:textSize="30sp"
                     android:textStyle="bold"
-
+                    android:layout_gravity="center"
                     />
 
                 <TextView
@@ -83,8 +100,11 @@
                     android:layout_height="wrap_content"
                     android:text="@string/contact"
                     android:textColor="@color/blue_color"
-                    android:textSize="20dp"
-                    android:textStyle="italic" />
+                    android:textSize="15sp"
+                    android:textStyle="italic"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    />
             </LinearLayout>
         </android.support.v7.widget.CardView>
 

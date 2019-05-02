@@ -7,31 +7,34 @@ import android.view.View;
 import android.widget.Button;
 
 public class Applicants_Actions extends AppCompatActivity {
-    private Button profile, update, jobs;
+    private  Button View_profile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_applicants__actions);
+
+        View_profile = (Button)findViewById(R.id.view_profile);
+
         viewProfile();
         updateProfile();
         viewJobs();
     }
 
-    public void viewProfile() {
-        profile = findViewById(R.id.view_profile);
-        profile.setOnClickListener(new View.OnClickListener() {
+    private void viewProfile() {
+        View_profile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Applicants_Actions.this, Applicants_profile.class);
                 startActivity(intent);
+                finish();
 
             }
         });
     }
 
-    public void updateProfile() {
-        update = findViewById(R.id.update_profile);
+    private void updateProfile() {
+        Button update = findViewById(R.id.update_profile);
         update.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -41,8 +44,8 @@ public class Applicants_Actions extends AppCompatActivity {
         });
     }
 
-    public void viewJobs() {
-        jobs = findViewById(R.id.view_jobs);
+    private void viewJobs() {
+        Button jobs = findViewById(R.id.view_jobs);
         jobs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -1,8 +1,25 @@
 <resources>
+
+    <array name="levelstudy">
+        <item>Primary Level</item>
+        <item>Secondary Level</item>
+        <item>Tertiary/collage Level</item>
+        <item>Degree level </item>
+        <item>Masters level</item>
+        <item>Phd level</item>
+    </array>
+    <array name="experience">
+        <item>none</item>
+        <item>one to three years</item>
+        <item> four to seven years</item>
+        <item> seven to ten years</item>
+        <item>above ten years</item>
+    </array>
+    <string name="messo">Please fill all the required field</string>
     <string name="app_name">JOB RECRUITMENT APP</string>
 
     <string name="home_text">
-        This is an android android application used by individual or the  companies who have jobs
+        This is an android application used by individual or the  companies who have jobs
         and want to post them and those who are looking for jobs. You can either post the job and
         its description by clicking the post button and Check button if searching for the job.
 
@@ -49,10 +66,24 @@
     <string name="prof">View your Profile</string>
     <string name="updateprof">Update your  profile</string>
     <string name="appviewjob">View Jobs</string>
+    <string name="addjob">Add Jobs</string>
     <string name="operation">Choose the kind of action you want to perform </string>
     <string name="updatejob">Update Jobs</string>
     <string name="clients">View applicants</string>
     <string name="companyprof">Update Company profile</string>
     <string name="viewcompanyprof">View Company profile</string>
+    <string name="gender">What is your gender</string>
+    <string name="appoperation">APPLICANTS OPPERATION</string>
+    <string name="compoper">COMPANY OPERATIONS</string>
+    <string name="welcoming">WELCOME TO ANDROID JOB RECRUITMENT APPLICATION</string>
+    <string name="some">Say something</string>
+    <string name="ras">Please give all the information</string>
 
+    <!--applicant information-->
+    <string name="instname">Institution Name</string>
+    <string name="studyarea">What you studied</string>
+    <string name="studylevel">Your level of study</string>
+    <string name="experience">Years of experience</string>
+    <string name="comment">Your reason for job</string>
+    <string name="gendering">Your sex</string>
 </resources>
